@@ -21,14 +21,10 @@
 
   <script>
     // Read pw from url hash
-    let password = window.location.hash.substring(1);/*
-    if (!password || password.length === 0) {
-      password = prompt("Please enter the password visible below the qr code:");
-    }*/
+    let password = window.location.hash.substring(1);
   </script>
   <script src="./scripts/decrypt.js"></script>
   <script>
-    /*
     decryptJson(password, "health-data").then(data => {
       let html = '';
 
@@ -64,7 +60,7 @@
         <p style="text-align:center">Fehler beim Laden der Daten. Bitte versuchen Sie es später erneut.</p>
         <p style="text-align:center">加载错误。请稍后再试。</p>
       `;
-    });*/
+    });
   </script>
 </body>
 </html>
