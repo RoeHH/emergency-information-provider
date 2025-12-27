@@ -21,17 +21,14 @@
 
   <script>
     // Read pw from url hash
-    const password = window.location.hash.substring(1);
+    let password = window.location.hash.substring(1);/*
     if (!password || password.length === 0) {
-      const userInput = prompt("Please enter the password visible below the qr code:");
-      if (userInput) {
-        window.location.hash = userInput;
-        location.reload();
-      }
-    }
+      password = prompt("Please enter the password visible below the qr code:");
+    }*/
   </script>
   <script src="./scripts/decrypt.js"></script>
   <script>
+    /*
     decryptJson(password, "health-data").then(data => {
       let html = '';
 
@@ -61,13 +58,13 @@
 
       document.getElementById('data-target').innerHTML = html;
     }).catch(error => {
-      console.error("Error decrypting data:", error);
+      //console.error("Error decrypting data:", error);
       document.getElementById('data-target').innerHTML = `
         <p style="text-align:center">Error loading data. Please try again later.</p>
         <p style="text-align:center">Fehler beim Laden der Daten. Bitte versuchen Sie es später erneut.</p>
         <p style="text-align:center">加载错误。请稍后再试。</p>
       `;
-    });
+    });*/
   </script>
 </body>
 </html>
