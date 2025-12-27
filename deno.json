@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "encrypt": {
+      "command": "deno run --allow-read --allow-write ./security/encrypt.ts"
+    },
+    "decrypt": {
+      "command": "deno run --allow-read --allow-write ./security/decrypt.ts"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+:root {
+  --red: #d32f2f;
+  --bg: #f4f4f7;
+  --text: #333;
+}
+body {
+  font-family: sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.3;
+  margin: 0;
+  padding: 15px;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: auto;
+  overflow: hidden;
+  border-top: 8px solid var(--red);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--red);
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+.header h1 {
+  margin: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.header img {
+  width: 32px;
+  height: 32px;
+}
+.content {
+  padding: 15px;
+}
+.data-block {
+  margin-bottom: 18px;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 8px;
+}
+.labels {
+  font-size: 0.7rem;
+  color: #666;
+  margin-bottom: 4px;
+  display: block;
+  line-height: 1.2;
+}
+.value {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--red);
+  word-break: break-word;
+}
+.value a {
+  cursor: pointer;
+}
+.icon-inline {
+  width: 0.9rem;
+  height: 0.9rem;
+  vertical-align: middle;
+  stroke: #666;
+}
+.btn {
+  display: block;
+  background: var(--red);
+  color: white;
+  text-align: center;
+  padding: 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+.footer-note {
+  font-size: 0.65rem;
+  color: #aaa;
+  text-align: center;
+  margin-top: 12px;
+  padding-bottom: 10px;
+}
