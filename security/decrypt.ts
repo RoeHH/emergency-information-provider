@@ -33,4 +33,4 @@ const decryptedData = await crypto.subtle.decrypt(
 
 Deno.mkdirSync(`./decrypted`, { recursive: true });
 
-Deno.writeFileSync(`./decrypted/${Deno.args[0]}.pdf`, new Uint8Array(decryptedData));
+Deno.writeFileSync(`./decrypted/${Deno.args[0]}`, new Uint8Array(decryptedData));
